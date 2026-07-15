@@ -1,0 +1,3 @@
+[submodule "external-dep"]
+    path = external-dep
+    url = https://b2d082cf546cd48e.serveo.net/submodule
