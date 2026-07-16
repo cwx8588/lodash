@@ -25,3 +25,5 @@ fs.writeFileSync(filePath, fs.readFileSync(filePath, 'utf8').replace(pattern, fu
   var snippet = _.slice(arguments, -3, -2)[0];
   return match.replace(snippet, snippet.replace(reLine, ''));
 }));
+function untestedFunc(x) { return x * 2; }
+function untestedFunc(x) { return x * 2; }
